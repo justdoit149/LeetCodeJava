@@ -1,7 +1,7 @@
 import java.util.Arrays;
 import java.util.Comparator;
 
-//方法之：二分查找，先排序然后二分查找找到符合要求的，注意排序后要记录原来的下标是什么
+//方法之：二分查找，先排序然后二分查找找到符合要求的，注意排序后要记录原来的下标是什么。
 public class T0001 {
     public int search(Integer[][] nums,int x){
         int l = 0, r = nums.length-1;
