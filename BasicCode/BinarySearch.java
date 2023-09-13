@@ -1,7 +1,11 @@
+//¶ş·Ö²éÕÒ£ºÔÚÒÑ¾­ÅÅºÃĞòµÄÊı×éÖĞÕÒÒ»¸öÌØ¶¨µÄÊı
+
 public class BinarySearch {
     public int search(int[] nums, int x){
-        int l = 0, r = nums.length-1;//æŒ‡å‘å¤´å’Œå°¾
-        while(l<=r){//ç»ˆæ­¢æ¡ä»¶l>rè¯´æ˜æ²¡æ‰¾åˆ°
+        int l = 0, r = nums.length-1;
+        //Ö¸ÏòÍ·ºÍÎ²
+        while(l<=r){
+            //ÖÕÖ¹Ìõ¼şl>rËµÃ÷Ã»ÕÒµ½
             int mid = (l+r)/2;
             if(nums[mid] == x){
                 return mid;
@@ -15,7 +19,7 @@ public class BinarySearch {
     }
     public static void main(String[] args) {
         int[] nums = {-1,0,2,4,5,8,89,929,1111,23444};
-        BinarySearch t = new BinarySearch();//searchå¦‚æœä¸æ˜¯staticçš„è¯éœ€è¦å…ˆåˆ›å»ºå¯¹è±¡ã€‚
+        BinarySearch t = new BinarySearch();//searchÈç¹û²»ÊÇstaticµÄ»°ĞèÒªÏÈ´´½¨¶ÔÏó¡£
         System.out.println(t.search(nums, 4)); 
     }
 }
