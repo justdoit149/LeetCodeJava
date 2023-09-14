@@ -5,7 +5,7 @@ public class T0080 {
     public int removeDuplicates(int[] nums) {
         int tag = -100000, index = 2;
         for(int i = nums.length - 1; i >= 2; i--){
-            if(nums[i] == nums[i-1] && nums[i] == nums[i-2]){
+            if(nums[i] == nums[i-2]){
                 nums[i] = tag;
             }
         }
@@ -20,6 +20,7 @@ public class T0080 {
     // //作者：力扣官方题解
     // //由于数组有序，j和i一样那ij之间一定都一样。
     // //这个设计比较巧妙，有效避免了去除元素造成的覆盖问题，不影响后续继续的去重。且只遍历一次。
+    // //并且这个扩展性强，保留k个只需要将所有的2改成k就可以了
     // public int removeDuplicates(int[] nums) {
     //     int n = nums.length;
     //     if (n <= 2) {
