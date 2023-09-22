@@ -1,0 +1,308 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "BinarySearch",
+            "request": "launch",
+            "mainClass": "BinarySearch",
+            "projectName": "LeetCodeJava_f1fb26d2"
+        },
+        {
+            "type": "java",
+            "name": "T0001",
+            "request": "launch",
+            "mainClass": "T0001",
+            "projectName": "LeetCodeJava_f1fb26d2"
+        },
+        {
+            "type": "java",
+            "name": "T0003",
+            "request": "launch",
+            "mainClass": "T0003",
+            "projectName": "LeetCodeJava_f1fb26d2"
+        },
+        {
+            "type": "java",
+            "name": "T0004",
+            "request": "launch",
+            "mainClass": "T0004",
+            "projectName": "LeetCodeJava_f1fb26d2"
+        },
+        {
+            "type": "java",
+            "name": "T0005",
+            "request": "launch",
+            "mainClass": "T0005",
+            "projectName": "LeetCodeJava_f1fb26d2"
+        },
+        {
+            "type": "java",
+            "name": "T0011",
+            "request": "launch",
+            "mainClass": "T0011",
+            "projectName": "LeetCodeJava_f1fb26d2"
+        },
+        {
+            "type": "java",
+            "name": "T0015",
+            "request": "launch",
+            "mainClass": "T0015",
+            "projectName": "LeetCodeJava_f1fb26d2"
+        },
+        {
+            "type": "java",
+            "name": "T0016",
+            "request": "launch",
+            "mainClass": "T0016",
+            "projectName": "LeetCodeJava_f1fb26d2"
+        },
+        {
+            "type": "java",
+            "name": "T0018",
+            "request": "launch",
+            "mainClass": "T0018",
+            "projectName": "LeetCodeJava_f1fb26d2"
+        },
+        {
+            "type": "java",
+            "name": "T0026",
+            "request": "launch",
+            "mainClass": "T0026",
+            "projectName": "LeetCodeJava_f1fb26d2"
+        },
+        {
+            "type": "java",
+            "name": "T0027",
+            "request": "launch",
+            "mainClass": "T0027",
+            "projectName": "LeetCodeJava_f1fb26d2"
+        },
+        {
+            "type": "java",
+            "name": "T0031",
+            "request": "launch",
+            "mainClass": "T0031",
+            "projectName": "LeetCodeJava_f1fb26d2"
+        },
+        {
+            "type": "java",
+            "name": "T0032",
+            "request": "launch",
+            "mainClass": "T0032",
+            "projectName": "LeetCodeJava_f1fb26d2"
+        },
+        {
+            "type": "java",
+            "name": "T0033",
+            "request": "launch",
+            "mainClass": "T0033",
+            "projectName": "LeetCodeJava_f1fb26d2"
+        },
+        {
+            "type": "java",
+            "name": "T0034",
+            "request": "launch",
+            "mainClass": "T0034",
+            "projectName": "LeetCodeJava_f1fb26d2"
+        },
+        {
+            "type": "java",
+            "name": "T0035",
+            "request": "launch",
+            "mainClass": "T0035",
+            "projectName": "LeetCodeJava_f1fb26d2"
+        },
+        {
+            "type": "java",
+            "name": "T0036",
+            "request": "launch",
+            "mainClass": "T0036",
+            "projectName": "LeetCodeJava_f1fb26d2"
+        },
+        {
+            "type": "java",
+            "name": "T0041",
+            "request": "launch",
+            "mainClass": "T0041",
+            "projectName": "LeetCodeJava_f1fb26d2"
+        },
+        {
+            "type": "java",
+            "name": "T0042",
+            "request": "launch",
+            "mainClass": "T0042",
+            "projectName": "LeetCodeJava_f1fb26d2"
+        },
+        {
+            "type": "java",
+            "name": "T0045",
+            "request": "launch",
+            "mainClass": "T0045",
+            "projectName": "LeetCodeJava_f1fb26d2"
+        },
+        {
+            "type": "java",
+            "name": "T0046",
+            "request": "launch",
+            "mainClass": "T0046",
+            "projectName": "LeetCodeJava_f1fb26d2"
+        },
+        {
+            "type": "java",
+            "name": "T0047",
+            "request": "launch",
+            "mainClass": "T0047",
+            "projectName": "LeetCodeJava_f1fb26d2"
+        },
+        {
+            "type": "java",
+            "name": "T0048",
+            "request": "launch",
+            "mainClass": "T0048",
+            "projectName": "LeetCodeJava_f1fb26d2"
+        },
+        {
+            "type": "java",
+            "name": "T0054",
+            "request": "launch",
+            "mainClass": "T0054",
+            "projectName": "LeetCodeJava_f1fb26d2"
+        },
+        {
+            "type": "java",
+            "name": "T0055",
+            "request": "launch",
+            "mainClass": "T0055",
+            "projectName": "LeetCodeJava_f1fb26d2"
+        },
+        {
+            "type": "java",
+            "name": "T0059",
+            "request": "launch",
+            "mainClass": "T0059",
+            "projectName": "LeetCodeJava_f1fb26d2"
+        },
+        {
+            "type": "java",
+            "name": "T0062",
+            "request": "launch",
+            "mainClass": "T0062",
+            "projectName": "LeetCodeJava_f1fb26d2"
+        },
+        {
+            "type": "java",
+            "name": "T0063",
+            "request": "launch",
+            "mainClass": "T0063",
+            "projectName": "LeetCodeJava_f1fb26d2"
+        },
+        {
+            "type": "java",
+            "name": "T0064",
+            "request": "launch",
+            "mainClass": "T0064",
+            "projectName": "LeetCodeJava_f1fb26d2"
+        },
+        {
+            "type": "java",
+            "name": "T0066",
+            "request": "launch",
+            "mainClass": "T0066",
+            "projectName": "LeetCodeJava_f1fb26d2"
+        },
+        {
+            "type": "java",
+            "name": "T0073",
+            "request": "launch",
+            "mainClass": "T0073",
+            "projectName": "LeetCodeJava_f1fb26d2"
+        },
+        {
+            "type": "java",
+            "name": "T0074",
+            "request": "launch",
+            "mainClass": "T0074",
+            "projectName": "LeetCodeJava_f1fb26d2"
+        },
+        {
+            "type": "java",
+            "name": "T0075",
+            "request": "launch",
+            "mainClass": "T0075",
+            "projectName": "LeetCodeJava_f1fb26d2"
+        },
+        {
+            "type": "java",
+            "name": "T0078",
+            "request": "launch",
+            "mainClass": "T0078",
+            "projectName": "LeetCodeJava_f1fb26d2"
+        },
+        {
+            "type": "java",
+            "name": "T0079",
+            "request": "launch",
+            "mainClass": "T0079",
+            "projectName": "LeetCodeJava_f1fb26d2"
+        },
+        {
+            "type": "java",
+            "name": "T0080",
+            "request": "launch",
+            "mainClass": "T0080",
+            "projectName": "LeetCodeJava_f1fb26d2"
+        },
+        {
+            "type": "java",
+            "name": "T0081",
+            "request": "launch",
+            "mainClass": "T0081",
+            "projectName": "LeetCodeJava_f1fb26d2"
+        },
+        {
+            "type": "java",
+            "name": "T0084",
+            "request": "launch",
+            "mainClass": "T0084",
+            "projectName": "LeetCodeJava_f1fb26d2"
+        },
+        {
+            "type": "java",
+            "name": "T0085",
+            "request": "launch",
+            "mainClass": "T0085",
+            "projectName": "LeetCodeJava_f1fb26d2"
+        },
+        {
+            "type": "java",
+            "name": "T0088",
+            "request": "launch",
+            "mainClass": "T0088",
+            "projectName": "LeetCodeJava_f1fb26d2"
+        },
+        {
+            "type": "java",
+            "name": "TwoPointer",
+            "request": "launch",
+            "mainClass": "TwoPointer",
+            "projectName": "LeetCodeJava_f1fb26d2"
+        },
+        {
+            "type": "java",
+            "name": "test",
+            "request": "launch",
+            "mainClass": "test",
+            "projectName": "LeetCodeJava_f1fb26d2"
+        }
+    ]
+}
