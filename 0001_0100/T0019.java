@@ -8,6 +8,7 @@
  *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
+//快慢指针遍历链表应用：查找倒数第k个元素。
 public class T0019 {
     public ListNode removeNthFromEnd(ListNode head, int n) {
         ListNode l = head, r = head, ll = null;
