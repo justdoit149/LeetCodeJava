@@ -21,4 +21,7 @@ public class T0056 {
         }
         return ans.toArray(new int[ans.size()][]);
     }
+    public static void main(String[] args) {
+        
+    }
 }
