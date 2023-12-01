@@ -47,7 +47,4 @@ public class T0101{
             this.right = right;
         }
     }
-    public static void main(String[] args) {
-        
-    }
 }

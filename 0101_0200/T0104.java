@@ -17,7 +17,4 @@ public class T0104 {
             this.right = right;
         }
     }
-    public static void main(String[] args) {
-        
-    }
 }

@@ -11,7 +11,4 @@ public class T0164 {
             return max;
         }
     }
-    public static void main(String[] args) {
-        
-    }
 }

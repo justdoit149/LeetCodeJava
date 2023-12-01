@@ -13,7 +13,4 @@ public class T0154 {
         }
         return nums[l];
     }
-    public static void main(String[] args) {
-        
-    }
 }

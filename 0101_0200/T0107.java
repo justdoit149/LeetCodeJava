@@ -49,8 +49,4 @@ public class T0107 {
             this.right = right;
         }
     }
-
-    public static void main(String[] args) {
-
-    }
 }

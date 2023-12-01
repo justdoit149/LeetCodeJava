@@ -22,7 +22,4 @@ public class T0149 {
         }
         return ans;
     }
-    public static void main(String[] args) {
-        
-    }
 }

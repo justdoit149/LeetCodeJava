@@ -68,8 +68,4 @@ public class T0103 {
             this.right = right;
         }
     }
-
-    public static void main(String[] args) {
-
-    }
 }
