@@ -49,8 +49,4 @@ public class T0015 {
         
         return ans;
     }
-
-    public static void main(String[] args) {
-        
-    }
 }

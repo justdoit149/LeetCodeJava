@@ -20,9 +20,4 @@ public class T0004 {
         }
         return (nums[(l-1)/2]+nums[l-(l+1)/2]) * 1.0 / 2;
     }
-
-    public static void main(String[] args) {
-        
-    }
-
 }

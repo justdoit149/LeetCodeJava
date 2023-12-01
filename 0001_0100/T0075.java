@@ -17,9 +17,5 @@ public class T0075 {
         for(int i = count[0] + count[1]; i < nums.length; i++){
             nums[i] = 2;
         }
-    }
-    public static void main(String[] args) {
-        
-    }
-    
+    }   
 }

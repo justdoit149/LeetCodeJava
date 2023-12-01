@@ -36,7 +36,4 @@ public class T0032 {
         }
         return ans;
     }
-    public static void main(String[] args) {
-        
-    }
 }

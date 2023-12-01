@@ -25,9 +25,6 @@ public class T0024 {
         }
         return begin.next;
     }
-    public static void main(String[] args) {
-        
-    }
     class ListNode {
         int val;
         ListNode next;

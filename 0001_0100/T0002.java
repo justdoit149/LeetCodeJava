@@ -43,10 +43,6 @@ public class T0002 {
         ans = start;
         return ans;
     }
-    public static void main(String[] args) {
-        // T0002 test = new T0002();
-
-    }
 }
 
 class ListNode {

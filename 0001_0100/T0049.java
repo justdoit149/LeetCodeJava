@@ -42,7 +42,6 @@ public class T0049 {
         }
         ans.add(new ArrayList<>(temp));
         return ans;
-
     }
 
     public static void main(String[] args) {

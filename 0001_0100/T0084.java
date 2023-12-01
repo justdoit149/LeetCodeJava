@@ -39,7 +39,4 @@ public class T0084 {
         }
         return ans;
     }
-    public static void main(String[] args) {
-        
-    }
 }

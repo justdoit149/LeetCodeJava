@@ -17,7 +17,4 @@ public class T0055 {
         }
         return true;
     }
-    public static void main(String[] args) {
-        
-    }
 }

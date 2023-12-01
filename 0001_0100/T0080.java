@@ -36,8 +36,4 @@ public class T0080 {
     //     }
     //     return slow;
     // }
-
-    public static void main(String[] args) {
-        
-    }
 }

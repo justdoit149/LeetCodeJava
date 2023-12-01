@@ -21,8 +21,4 @@ public class T0016 {
         }
         return ans;
     }
-
-    public static void main(String[] args) {
-        
-    }
 }

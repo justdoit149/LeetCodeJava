@@ -62,8 +62,4 @@ public class T0098 {
             this.right = right;
         }
     }
-
-    public static void main(String[] args) {
-        System.out.println(Integer.MIN_VALUE);
-    }
 }

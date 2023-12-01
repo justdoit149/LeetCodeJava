@@ -29,7 +29,4 @@ public class T0079 {
         board[r][c] = word.charAt(index);//需要恢复，因为换一个分支可能再用它
         return ans;
     }
-    public static void main(String[] args) {
-        
-    }
 }

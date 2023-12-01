@@ -8,9 +8,6 @@ public class T0100 {
             return p.val==q.val && isSameTree(p.left,q.left) && isSameTree(p.right,q.right);
         }
     }
-    public static void main(String[] args) {
-        
-    }
     class TreeNode {
         int val;
         TreeNode left;

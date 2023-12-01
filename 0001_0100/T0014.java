@@ -27,8 +27,5 @@ public class T0014 {
             ans0 = ans0 + ans[i] + "";
         }
         return ans0;
-    } 
-    public static void main(String[] args) {
-        
     }
 }

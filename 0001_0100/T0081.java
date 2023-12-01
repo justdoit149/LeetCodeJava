@@ -5,7 +5,4 @@ public class T0081 {
         }
         return false;
     }
-    public static void main(String[] args) {
-        
-    }
 }

@@ -41,8 +41,4 @@ public class T0033 {
         }
         return -1;
     }
-
-    public static void main(String[] args) {
-        
-    }
 }

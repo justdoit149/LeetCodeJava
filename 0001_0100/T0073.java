@@ -52,8 +52,4 @@ public class T0073 {
             }
         }    
     }
-
-    public static void main(String[] args) {
-        
-    }
 }

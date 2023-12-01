@@ -15,7 +15,4 @@ public class T0064 {
         }
         return grid[m-1][n-1];
     }
-    public static void main(String[] args) {
-        
-    }
 }

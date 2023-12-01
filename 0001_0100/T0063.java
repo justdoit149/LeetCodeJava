@@ -34,8 +34,4 @@ public class T0063 {
         }
         return obstacleGrid[m-1][n-1];
     }
-
-    public static void main(String[] args) {
-        
-    }
 }

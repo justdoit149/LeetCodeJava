@@ -43,7 +43,4 @@ class T0047 {
             already_number.remove(already_number.size()-1);
         }
     }
-    public static void main(String[] args) {
-        
-    }
 }

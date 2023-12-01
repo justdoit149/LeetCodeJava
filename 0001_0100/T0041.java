@@ -32,8 +32,4 @@ public class T0041 {
         }
         return N;
     }
-
-    public static void main(String[] args) {
-        
-    }
 }

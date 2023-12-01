@@ -7,7 +7,4 @@ public class T0007 {
         }
         return (int)n==n? (int)n:0;
     }
-    public static void main(String[] args) {
-        
-    }
 }

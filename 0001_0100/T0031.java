@@ -29,7 +29,4 @@ public class T0031 {
             }
         }
     }
-    public static void main(String[] args) {
-        
-    }
 }

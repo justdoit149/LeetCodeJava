@@ -12,7 +12,4 @@ public class T0096 {
         }
         return dp[n];
     }
-    public static void main(String[] args) {
-        
-    }
 }

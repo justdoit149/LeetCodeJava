@@ -35,10 +35,5 @@ public class T0099 {
             this.left = left;
             this.right = right;
         }
-    }
-
-    public static void main(String[] args) {
-        
-    }
-    
+    }  
 }

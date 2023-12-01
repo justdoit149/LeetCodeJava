@@ -43,8 +43,4 @@ public class T0018 {
         }
         return ans;
     }
-
-    public static void main(String[] args) {
-        
-    }
 }

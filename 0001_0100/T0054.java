@@ -26,7 +26,4 @@ public class T0054 {
         if(count == 0) return;
         solve(matrix, level+1, count, ans, m, n);       
     }
-    public static void main(String[] args) {
-        
-    }
 }

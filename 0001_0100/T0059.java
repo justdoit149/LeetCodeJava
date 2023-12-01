@@ -20,7 +20,4 @@ public class T0059 {
         }
         return ans;
     }
-    public static void main(String[] args) {
-        
-    }
 }
