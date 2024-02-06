@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-//ÕÒ×Ó¼¯£ºi¸öÔªËØµÄ¼¯ºÏµÄËùÓĞ×Ó¼¯ = Ç°i-1¸öµÄËùÓĞ×Ó¼¯ + Ç°i-1¸öµÄÃ¿¸ö×Ó¼¯¶¼¼ÓÉÏ×îºóÒ»¸ö
+//æ‰¾å­é›†ï¼šiä¸ªå…ƒç´ çš„é›†åˆçš„æ‰€æœ‰å­é›† = å‰i-1ä¸ªçš„æ‰€æœ‰å­é›† + å‰i-1ä¸ªçš„æ¯ä¸ªå­é›†éƒ½åŠ ä¸Šæœ€åä¸€ä¸ª
 public class T0078 {
     public List<List<Integer>> subsets(int[] nums) {
         List<List<Integer>> ans = new ArrayList<>();
@@ -13,7 +13,7 @@ public class T0078 {
         for(int i = 1; i < nums.length; i++){
             n = ans.size();
             for(int j = 0; j < n; j++){
-                //get³öÀ´µÄ²»ÄÜÖ±½ÓÈ¥ĞŞ¸Ä²Ù×÷£¬Ó¦¸ÃnewÒ»¸öĞÂµÄÔÙ²Ù×÷
+                //getå‡ºæ¥çš„ä¸èƒ½ç›´æ¥å»ä¿®æ”¹æ“ä½œï¼Œåº”è¯¥newä¸€ä¸ªæ–°çš„å†æ“ä½œ
                 temp = new ArrayList<>(ans.get(j));
                 temp.add(nums[i]);
                 ans.add(temp);

@@ -3,8 +3,8 @@ import java.util.*;
 public class T0049 {
     public List<List<String>> groupAnagrams(String[] strs) {
         List<List<String>> ans = new ArrayList<>();
-        //ÅÅĞò£¬ÏÈ½«×Ö·û´®°´×ÖÄ¸ÖØÅÅºóÅÅĞò£¬ÕâÑùÒìÎ»´Ê¾Í·ÅÔÚÒ»ÆğÁË¡£
-        //×¢Òâ²»µÈ³¤µÄ´¦Àí£¬ÈçaaÓëaab£¬Ç°Ãæ¶¼ÏàÍ¬¿ÉÒÔÈÃ³¤µÄÔÚºó£¬ÕâÑù±ÜÃâË³Ğò³öÎÊÌâ¡£
+        //æ’åºï¼Œå…ˆå°†å­—ç¬¦ä¸²æŒ‰å­—æ¯é‡æ’åæ’åºï¼Œè¿™æ ·å¼‚ä½è¯å°±æ”¾åœ¨ä¸€èµ·äº†ã€‚
+        //æ³¨æ„ä¸ç­‰é•¿çš„å¤„ç†ï¼Œå¦‚aaä¸aabï¼Œå‰é¢éƒ½ç›¸åŒå¯ä»¥è®©é•¿çš„åœ¨åï¼Œè¿™æ ·é¿å…é¡ºåºå‡ºé—®é¢˜ã€‚
         Arrays.sort(strs,new Comparator<String>() {
             public int compare(String a, String b){
                 char[] temp_a = a.toCharArray();
@@ -26,7 +26,7 @@ public class T0049 {
             tempArray = Arrays.copyOf(strs[i].toCharArray(),strs[i].length());
             Arrays.sort(tempArray);
             Sorted[i] = Arrays.toString(tempArray);
-            //²»ÄÜtempArray.toString()ÕâÑù×ª»»µÄÊÇµØÖ·¡£
+            //ä¸èƒ½tempArray.toString()è¿™æ ·è½¬æ¢çš„æ˜¯åœ°å€ã€‚
         }
         temp.add(strs[0]);
         for(int i = 1; i < strs.length; i++){

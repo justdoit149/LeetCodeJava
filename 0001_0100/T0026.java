@@ -1,9 +1,9 @@
 import java.util.ArrayList;
 
 public class T0026 {
-    // ÕâÀïÊÔÍ¼¿ªÒ»¸öÊı×é³­¹ıÀ´ÔÙ³­»ØÈ¥
-    // ÆäÊµ¿ÉÒÔ¹ö¶¯Ê½£¬³õÊ¼k=1£¬ÔÚÔ­Êı×éÀïÑ­»·i¡£
-    // Ò»µ©nums[i-1]ºÍnums[i]²»ÏàµÈÔònums[k] = nums[i]È»ºók++
+    // è¿™é‡Œè¯•å›¾å¼€ä¸€ä¸ªæ•°ç»„æŠ„è¿‡æ¥å†æŠ„å›å»
+    // å…¶å®å¯ä»¥æ»šåŠ¨å¼ï¼Œåˆå§‹k=1ï¼Œåœ¨åŸæ•°ç»„é‡Œå¾ªç¯iã€‚
+    // ä¸€æ—¦nums[i-1]å’Œnums[i]ä¸ç›¸ç­‰åˆ™nums[k] = nums[i]ç„¶åk++
     public int removeDuplicates(int[] nums) {
         int k=0;
         ArrayList<Integer> temp = new ArrayList<Integer>();

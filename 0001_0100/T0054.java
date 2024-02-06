@@ -1,8 +1,8 @@
 import java.util.ArrayList;
 import java.util.List;
-//���Խ����󿴳����ɲ㣬�������������Ԫ�أ�������������Ԫ�أ�ֱ��������ڲ��Ԫ��
-//���������ò������ݹ�
-//�����ٿ�һ�������������ĳ��λ���Ƿ��ù���һ�������ù��Ļ��߽߱�ͻ�����
+//可以将矩阵看成若干层，首先输出最外层的元素，其次输出次外层的元素，直到输出最内层的元素
+//这样可以用层数来递归
+//或者再开一个矩阵用来标记某个位置是否用过，一旦遇到用过的或者边界就换方向。
 public class T0054 {
     public List<Integer> spiralOrder(int[][] matrix) {
         List<Integer> ans = new ArrayList<>();

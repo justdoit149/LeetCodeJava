@@ -8,7 +8,7 @@
  *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
-//¿ìÂıÖ¸Õë±éÀúÁ´±íÓ¦ÓÃ£º²éÕÒµ¹ÊıµÚk¸öÔªËØ¡£
+//å¿«æ…¢æŒ‡é’ˆéå†é“¾è¡¨åº”ç”¨ï¼šæŸ¥æ‰¾å€’æ•°ç¬¬kä¸ªå…ƒç´ ã€‚
 public class T0019 {
     public ListNode removeNthFromEnd(ListNode head, int n) {
         ListNode l = head, r = head, ll = null;
@@ -16,13 +16,13 @@ public class T0019 {
             r = r.next;
         }
         while(r != null){
-            ll = l;//Èç¹ûÄÜ½øÕâ¸öÑ­»·ËµÃ÷l != head£¬²»½øÕâ¸öÑ­»·ËµÃ÷l == headÓÃ²»ÉÏllÁË
+            ll = l;//å¦‚æœèƒ½è¿›è¿™ä¸ªå¾ªç¯è¯´æ˜l != headï¼Œä¸è¿›è¿™ä¸ªå¾ªç¯è¯´æ˜l == headç”¨ä¸ä¸Šlläº†
             l = l.next;
             r = r.next;
         }
         if(l == head){
             head = l.next;
-        }else{//lÊÇÎ²µÄÊ±ºòl.next == null£¬Ò²ÊÊÓÃÓÚelse
+        }else{//læ˜¯å°¾çš„æ—¶å€™l.next == nullï¼Œä¹Ÿé€‚ç”¨äºelse
             ll.next = l.next;
         }
         return head;

@@ -6,17 +6,17 @@ class T0066 {
                 is_Max = false;
             }
         }
-        if(is_Max == true){//´¦ÀíÈ«ÊÇ9µÄÇé¿ö£¬ĞèÒªÎ»Êı+1
+        if(is_Max == true){//å¤„ç†å…¨æ˜¯9çš„æƒ…å†µï¼Œéœ€è¦ä½æ•°+1
             int[] digits2 = new int[digits.length+1];
             digits2[0] = 1;
-            for(int i = 1; i < digits2.length; i++){//ÕâÒ»²½Ã»±ØÒª
+            for(int i = 1; i < digits2.length; i++){//è¿™ä¸€æ­¥æ²¡å¿…è¦
                 digits2[i] = 0;
             }
             return digits2;
         }
         digits[digits.length-1] += 1;
         for(int i = digits.length-1; i >= 1; i--){
-            if(digits[i] == 10){//¿¼ÂÇ½øÎ»
+            if(digits[i] == 10){//è€ƒè™‘è¿›ä½
                 digits[i] = 0;
                 digits[i-1] += 1;
             }
@@ -42,8 +42,8 @@ class T0066 {
 // 			} 
 // 		    digits[i] = 0;
 // 		}
-//         //Ìø³öforÑ­»·£¬ËµÃ÷Êı×ÖÈ«²¿ÊÇ9
-// 		int[] temp = new int[digits.length + 1];//Êı×éÄ¬ÈÏÈ«0
+//         //è·³å‡ºforå¾ªç¯ï¼Œè¯´æ˜æ•°å­—å…¨éƒ¨æ˜¯9
+// 		int[] temp = new int[digits.length + 1];//æ•°ç»„é»˜è®¤å…¨0
 // 		temp[0] = 1;
 // 		return temp;
 //     }

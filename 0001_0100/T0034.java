@@ -1,5 +1,5 @@
 public class T0034 {
-    //注意数据范围,length能是0.
+    //娉ㄦ剰鏁版嵁鑼冨洿,length鑳芥槸0.
     public int[] searchRange(int[] nums, int target) {
         int[] ans = new int[2];
         if(nums.length == 0){

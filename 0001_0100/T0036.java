@@ -11,9 +11,9 @@ public class T0036 {
         }
         return true;
     }
-    //×¢Òâ´úÂëµÄ¸´ÓÃ¡£ĞĞºÍÁĞºÜÏÔÈ»¼¸ºõÊÇÍêÈ«Ò»ÖÂµÄ£¬Ã»±ØÒª¸´ÖÆÒ»±é¡£
+    //æ³¨æ„ä»£ç çš„å¤ç”¨ã€‚è¡Œå’Œåˆ—å¾ˆæ˜¾ç„¶å‡ ä¹æ˜¯å®Œå…¨ä¸€è‡´çš„ï¼Œæ²¡å¿…è¦å¤åˆ¶ä¸€éã€‚
     public boolean check_same(char[][] board, int i, int j, int i0, int j0){
-        //i0ºÍj0Ö¸Ê¾·½Ïò
+        //i0å’Œj0æŒ‡ç¤ºæ–¹å‘
         boolean[] check = new boolean[10];
         int temp = 0;
         if(i0 == j0){

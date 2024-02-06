@@ -10,10 +10,10 @@
  */
 
 public class T0002 {
-    //»ù±¾µÄÁ´±í±éÀú²Ù×÷
+    //åŸºæœ¬çš„é“¾è¡¨éå†æ“ä½œ
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         ListNode ans = new ListNode((l1.val+l2.val) % 10, null);
-        ListNode start = ans;//£¡£¡£¡ĞèÒª¼ÇÂ¼¿ªÊ¼Î»ÖÃ£¬Òª²»È»µ½×îºó±éÀúµ½µ×»Ø²»À´ÁË
+        ListNode start = ans;//ï¼ï¼ï¼éœ€è¦è®°å½•å¼€å§‹ä½ç½®ï¼Œè¦ä¸ç„¶åˆ°æœ€åéå†åˆ°åº•å›ä¸æ¥äº†
         int carry = (l1.val+l2.val) / 10;
         while(l1.next != null && l2.next != null){
             ans.next =  new ListNode((l1.next.val+l2.next.val + carry) % 10, null);

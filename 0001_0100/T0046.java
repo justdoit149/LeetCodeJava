@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
-//ÕÒ³öÒ»¸ö¼¯ºÏÈô¸ÉÔªËØµÄÈ«ÅÅÁĞ£¬ÖØÒª£¡£¡
+//æ‰¾å‡ºä¸€ä¸ªé›†åˆè‹¥å¹²å…ƒç´ çš„å…¨æ’åˆ—ï¼Œé‡è¦ï¼ï¼
 public class T0046 {
     public List<List<Integer>> permute(int[] nums) {
         List<List<Integer>> ans = new ArrayList<>();
@@ -12,8 +12,8 @@ public class T0046 {
         solve(ans,left_number,already_number);
         return ans;
     }
-    //ansÎª×îÖÕÒª·µ»ØµÄ½á¹û£¬left_numberÎªÊ£ÓàµÄÊı£¬µ±ËüÎª¿ÕÊ±µİ¹é½áÊø¡¢µÃµ½Ò»ÖÖÅÅÁĞ£¬È»ºóÔÙ½øĞĞÏÂÒ»ÖÖ
-    //already_numberÊÇÒÑ¾­ĞÎ³ÉµÄÅÅÁĞ£¬µ±left_number¿ÕÊ±£¬Ëü¾ÍµÃµ½ÁËÒ»¸öÅÅÁĞ£¬½«Ëü¼ÓÈëansÖĞ¡£
+    //ansä¸ºæœ€ç»ˆè¦è¿”å›çš„ç»“æœï¼Œleft_numberä¸ºå‰©ä½™çš„æ•°ï¼Œå½“å®ƒä¸ºç©ºæ—¶é€’å½’ç»“æŸã€å¾—åˆ°ä¸€ç§æ’åˆ—ï¼Œç„¶åå†è¿›è¡Œä¸‹ä¸€ç§
+    //already_numberæ˜¯å·²ç»å½¢æˆçš„æ’åˆ—ï¼Œå½“left_numberç©ºæ—¶ï¼Œå®ƒå°±å¾—åˆ°äº†ä¸€ä¸ªæ’åˆ—ï¼Œå°†å®ƒåŠ å…¥ansä¸­ã€‚
     public void solve(List<List<Integer>> ans, 
                     ArrayList<Integer> left_number, 
                     ArrayList<Integer> already_number){
@@ -21,8 +21,8 @@ public class T0046 {
             ans.add(new ArrayList<>(already_number));
         }
         for(int i = 0; i < left_number.size(); i++){
-            //ÕâÎåĞĞÊÇ¹Ø¼ü£¬½«Ê£ÓàÊıÖğ¸öÑ¹ÈëÔİ´æÅÅÁĞ¡¢È»ºóÔÙµİ¹éµØÈ¥´¦Àí£¬×îºó´¦ÀíÍêºó½«Õâ¸öÊı·Å»ØÈ¥
-            //Õâ¸öµİ¹éµÄ¹ı³Ì¿ÉÒÔ¿´³ÉÊÇÒ»ÖÖÉî¶ÈÓÅÏÈ
+            //è¿™äº”è¡Œæ˜¯å…³é”®ï¼Œå°†å‰©ä½™æ•°é€ä¸ªå‹å…¥æš‚å­˜æ’åˆ—ã€ç„¶åå†é€’å½’åœ°å»å¤„ç†ï¼Œæœ€åå¤„ç†å®Œåå°†è¿™ä¸ªæ•°æ”¾å›å»
+            //è¿™ä¸ªé€’å½’çš„è¿‡ç¨‹å¯ä»¥çœ‹æˆæ˜¯ä¸€ç§æ·±åº¦ä¼˜å…ˆ
             already_number.add(left_number.get(i));
             left_number.remove(left_number.get(i));
             solve(ans,left_number,already_number);
@@ -38,7 +38,7 @@ public class T0046 {
     }
 }
 
-// //ÒÔÏÂÊÇÁ¦¿Û¹Ù·½Ìâ½â
+// //ä»¥ä¸‹æ˜¯åŠ›æ‰£å®˜æ–¹é¢˜è§£
 // class Solution {
 //     public List<List<Integer>> permute(int[] nums) {
 //         List<List<Integer>> res = new ArrayList<List<Integer>>();
@@ -54,16 +54,16 @@ public class T0046 {
 //     }
 
 //     public void backtrack(int n, List<Integer> output, List<List<Integer>> res, int first) {
-//         // ËùÓĞÊı¶¼ÌîÍêÁË
+//         // æ‰€æœ‰æ•°éƒ½å¡«å®Œäº†
 //         if (first == n) {
 //             res.add(new ArrayList<Integer>(output));
 //         }
 //         for (int i = first; i < n; i++) {
-//             // ¶¯Ì¬Î¬»¤Êı×é
+//             // åŠ¨æ€ç»´æŠ¤æ•°ç»„
 //             Collections.swap(output, first, i);
-//             // ¼ÌĞøµİ¹éÌîÏÂÒ»¸öÊı
+//             // ç»§ç»­é€’å½’å¡«ä¸‹ä¸€ä¸ªæ•°
 //             backtrack(n, output, res, first + 1);
-//             // ³·Ïú²Ù×÷
+//             // æ’¤é”€æ“ä½œ
 //             Collections.swap(output, first, i);
 //         }
 //     }

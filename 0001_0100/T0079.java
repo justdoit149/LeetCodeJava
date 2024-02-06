@@ -1,5 +1,5 @@
 public class T0079 {
-    //用递归来实现深度优先搜索，且如果不匹配的话及时剪枝
+    //鐢ㄩ�掑綊鏉ュ疄鐜版繁搴︿紭鍏堟悳绱紝涓斿鏋滀笉鍖归厤鐨勮瘽鍙婃椂鍓灊
     public boolean exist(char[][] board, String word) {
         char[][] board2 = new char[10][10];
         boolean ans = false;
@@ -23,10 +23,10 @@ public class T0079 {
         }else if(word.charAt(index) != board[r][c]){
             return false;
         }
-        board[r][c] = '\0';//不能重复
+        board[r][c] = '\0';//涓嶈兘閲嶅
         boolean ans = find(board, r+1, c, word, index+1) || find(board, r-1, c, word, index+1)
                     || find(board, r, c+1, word, index+1) || find(board, r, c-1, word, index+1);
-        board[r][c] = word.charAt(index);//需要恢复，因为换一个分支可能再用它
+        board[r][c] = word.charAt(index);//闇�瑕佹仮澶嶏紝鍥犱负鎹竴涓垎鏀彲鑳藉啀鐢ㄥ畠
         return ans;
     }
 }

@@ -1,5 +1,5 @@
 public class T0044 {
-    //双指针遍历。或者也可以dp
+    //鍙屾寚閽堥亶鍘嗐�傛垨鑰呬篃鍙互dp
     public boolean isMatch(String s, String p) {
         int sn = s.length(), pn = p.length();
         int i = 0, j = 0;

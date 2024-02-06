@@ -10,8 +10,8 @@ class T0047 {
         ArrayList<Integer> already_number = new ArrayList<>();
         solve(ans,left_number,already_number);
         return ans;
-    //ansÎª×îÖÕÒª·µ»ØµÄ½á¹û£¬left_numberÎªÊ£ÓàµÄÊı£¬µ±ËüÎª¿ÕÊ±µİ¹é½áÊø¡¢µÃµ½Ò»ÖÖÅÅÁĞ£¬È»ºóÔÙ½øĞĞÏÂÒ»ÖÖ
-    //already_numberÊÇÒÑ¾­ĞÎ³ÉµÄÅÅÁĞ£¬µ±left_number¿ÕÊ±£¬Ëü¾ÍµÃµ½ÁËÒ»¸öÅÅÁĞ£¬½«Ëü¼ÓÈëansÖĞ¡£
+    //ansä¸ºæœ€ç»ˆè¦è¿”å›çš„ç»“æœï¼Œleft_numberä¸ºå‰©ä½™çš„æ•°ï¼Œå½“å®ƒä¸ºç©ºæ—¶é€’å½’ç»“æŸã€å¾—åˆ°ä¸€ç§æ’åˆ—ï¼Œç„¶åå†è¿›è¡Œä¸‹ä¸€ç§
+    //already_numberæ˜¯å·²ç»å½¢æˆçš„æ’åˆ—ï¼Œå½“left_numberç©ºæ—¶ï¼Œå®ƒå°±å¾—åˆ°äº†ä¸€ä¸ªæ’åˆ—ï¼Œå°†å®ƒåŠ å…¥ansä¸­ã€‚
     
     }
     public void solve(List<List<Integer>> ans, 
@@ -22,7 +22,7 @@ class T0047 {
         }
         int[] same_temp = new int[left_number.size()];
         for(int i = 0; i < left_number.size(); i++){
-            //È¥ÖØ£ºÍ¬²ãÈç¹ûÖØ¸´ÁË¾Í²»ÓÃ¿´ÁË
+            //å»é‡ï¼šåŒå±‚å¦‚æœé‡å¤äº†å°±ä¸ç”¨çœ‹äº†
             same_temp[i] = left_number.get(i);
             boolean check_same = false;
             for(int j = 0; j < i; j++){
@@ -33,9 +33,9 @@ class T0047 {
             if(check_same == true){
                 continue;
             }
-            //×¢Òâ£ºÕâÀïÕâĞ©ÁĞ±íÀïµÄÊı¾İÀàĞÍ¶¼ÊÇInteger
-            //¶øremoveÈç¹û²ÎÊıÊÇintÊÓÎªÏÂ±ê£¬²ÎÊıÊÇIntegerÊÓ×÷ÒÆ³ıÕâ¸öÖµ£¬Ëü»á×Ô¼ºÕÒ
-            //ËùÒÔÓĞÖØ¸´µÄÊ±ºòÊÇ±ØĞëÓÃÏÂ±êµÄ£¬ËüÕÒµÄºÍÄãÏëÒÆ³ıµÄ²»Ò»Ñù¡£
+            //æ³¨æ„ï¼šè¿™é‡Œè¿™äº›åˆ—è¡¨é‡Œçš„æ•°æ®ç±»å‹éƒ½æ˜¯Integer
+            //è€Œremoveå¦‚æœå‚æ•°æ˜¯intè§†ä¸ºä¸‹æ ‡ï¼Œå‚æ•°æ˜¯Integerè§†ä½œç§»é™¤è¿™ä¸ªå€¼ï¼Œå®ƒä¼šè‡ªå·±æ‰¾
+            //æ‰€ä»¥æœ‰é‡å¤çš„æ—¶å€™æ˜¯å¿…é¡»ç”¨ä¸‹æ ‡çš„ï¼Œå®ƒæ‰¾çš„å’Œä½ æƒ³ç§»é™¤çš„ä¸ä¸€æ ·ã€‚
             already_number.add(left_number.get(i));
             left_number.remove(i);
             solve(ans,left_number,already_number);

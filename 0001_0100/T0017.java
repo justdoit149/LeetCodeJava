@@ -1,7 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
 
-//µÝ¹éËÑË÷
 public class T0017 {
     String[] chars = {"abc","def","ghi","jkl","mno","pqrs","tuv","wxyz"};
     StringBuilder sb = new StringBuilder();

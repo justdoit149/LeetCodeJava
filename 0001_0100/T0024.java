@@ -11,17 +11,17 @@
 public class T0024 { 
     public ListNode swapPairs(ListNode head) {
         if(head == null || head.next == null) return head;
-        //ÏÈÌí¼Ó±íÍ·£¬±ÜÃâ¸´ÔÓÌÖÂÛ¡£Êµ¼Ê·¢ÏÖ²»ÓÃ¼Ó±íÎ²£¬ÒòÎª±¾ÉíÎ²ÊÇnull£¬¿ÉÒÔ·ÅÔÚµÈºÅÓÒ±ß
+        //å…ˆæ·»åŠ è¡¨å¤´ï¼Œé¿å…å¤æ‚è®¨è®ºã€‚å®é™…å‘ç°ä¸ç”¨åŠ è¡¨å°¾ï¼Œå› ä¸ºæœ¬èº«å°¾æ˜¯nullï¼Œå¯ä»¥æ”¾åœ¨ç­‰å·å³è¾¹
         ListNode begin = new ListNode(0, head);
         ListNode l = begin, temp1 = null, temp2 = null;
-        //È»ºó¿ªÊ¼½»»»¡£Ò»´Î±éÀú¼´¿É£¬²»ĞèÒª¼ÆÊıÒ»¹²ÓĞ¶àÉÙ¸ö½Úµã¡£
+        //ç„¶åå¼€å§‹äº¤æ¢ã€‚ä¸€æ¬¡éå†å³å¯ï¼Œä¸éœ€è¦è®¡æ•°ä¸€å…±æœ‰å¤šå°‘ä¸ªèŠ‚ç‚¹ã€‚
         while(l.next != null && l.next.next != null){
             temp1 = l.next;
             temp2 = l.next.next.next;
             l.next = l.next.next;
             l.next.next = temp1;
             l.next.next.next = temp2;
-            l = l.next.next;//Õâ¸ö¸Ä±äl£¬ÊµÏÖ¶à´ÎĞŞ¸Ä
+            l = l.next.next;//è¿™ä¸ªæ”¹å˜lï¼Œå®ç°å¤šæ¬¡ä¿®æ”¹
         }
         return begin.next;
     }

@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-//×¢ÒâÊı¾İ·¶Î§¿ÉÄÜÔì³ÉÒç³ö£¬Ó¦¸ÃÓÃ¸ß¾«¶È
+//æ³¨æ„æ•°æ®èŒƒå›´å¯èƒ½é€ æˆæº¢å‡ºï¼Œåº”è¯¥ç”¨é«˜ç²¾åº¦
 public class T0018 {
     public List<List<Integer>> fourSum(int[] nums, int target) {
         List<List<Integer>> ans = new ArrayList<>();
@@ -10,26 +10,26 @@ public class T0018 {
         long sum;
         Arrays.sort(nums);
         for(int i = 0; i < nums.length - 3; i++){
-            if(i > 0 && nums[i] == nums[i-1]){//È¥ÖØ
+            if(i > 0 && nums[i] == nums[i-1]){//å»é‡
                 continue;
             }
             for(int j = i + 1; j < nums.length - 2; j++){
-                if(j > i + 1 && nums[j] == nums[j-1]){//È¥ÖØ
+                if(j > i + 1 && nums[j] == nums[j-1]){//å»é‡
                     continue;
                 }
                 l = j + 1;
                 r = nums.length - 1;
                 while(l < r){
-                    //×ªLong×¢ÒânumsÊÇintÊı×é£¬¼ÆËã½á¹ûÒ²ÊÇint£¬¶ÔÆäÖĞÒ»¸öÔªËØ×ªlong¼´¿ÉÀàĞÍÌáÉı
-                    //µ«ÊÇ²»ÄÜsum = (long)(i,j,l,r)ÕâÈÔÈ»ÊÇÏÈ¼ÆËãÔÙ×ª»»¡£
+                    //è½¬Longæ³¨æ„numsæ˜¯intæ•°ç»„ï¼Œè®¡ç®—ç»“æœä¹Ÿæ˜¯intï¼Œå¯¹å…¶ä¸­ä¸€ä¸ªå…ƒç´ è½¬longå³å¯ç±»å‹æå‡
+                    //ä½†æ˜¯ä¸èƒ½sum = (long)(i,j,l,r)è¿™ä»ç„¶æ˜¯å…ˆè®¡ç®—å†è½¬æ¢ã€‚
                     sum = (long)nums[i] + nums[j] + nums[l] + nums[r];
                     if(sum > target){
                         r--;
                     }else if(sum < target){
                         l++;
                     }else{
-                        if(l > j + 1 && nums[l] == nums[l-1]){//È¥ÖØ£¬ÕâÀïlºÍrÒª¶¯£¡
-                            //Ö»±Èl¼´¿É£¬ÒòÎªÇ°Èı¸öÏàÍ¬ÇÒºÍÏàÍ¬£¬µÚËÄ¸öÒ²Ò»¶¨ÏàÍ¬¡£
+                        if(l > j + 1 && nums[l] == nums[l-1]){//å»é‡ï¼Œè¿™é‡Œlå’Œrè¦åŠ¨ï¼
+                            //åªæ¯”lå³å¯ï¼Œå› ä¸ºå‰ä¸‰ä¸ªç›¸åŒä¸”å’Œç›¸åŒï¼Œç¬¬å››ä¸ªä¹Ÿä¸€å®šç›¸åŒã€‚
                             l++;
                             r--;
                             continue;

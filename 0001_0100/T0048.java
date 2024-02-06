@@ -1,5 +1,5 @@
 public class T0048 {
-    //ÖØµãÊÇ±ß½çÌõ¼şµÄÅĞ¶ÏÓë´¦Àí
+    //é‡ç‚¹æ˜¯è¾¹ç•Œæ¡ä»¶çš„åˆ¤æ–­ä¸å¤„ç†
     public void rotate(int[][] matrix) {
         int n = matrix.length, temp = 0;
         for(int i = 0; i < (n+1)/2; i++){

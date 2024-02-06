@@ -1,5 +1,5 @@
 public class T0074 {
-    //¶þÎ¬Êý×é£¬¶þ·Ö²éÕÒ£¬Àà±ÈÒ»Î¬¡£
+    //äºŒç»´æ•°ç»„ï¼ŒäºŒåˆ†æŸ¥æ‰¾ï¼Œç±»æ¯”ä¸€ç»´ã€‚
     public boolean searchMatrix(int[][] matrix, int target) {
         int m = matrix.length, n = matrix[0].length;
         int l = 0, r = m * n - 1, mid = 0;

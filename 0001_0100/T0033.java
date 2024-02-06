@@ -4,8 +4,8 @@ public class T0033 {
     public int search(int[] nums, int target) {
         int mid = find_index(nums), ans;
         if(mid == -1){
-            //×Ô´øµÄbinarySearch£¬ÈôtargetĞ¡ÓÚnumsÀïËùÓĞÖµÔò·µ»Ø-1£¬´óÓÚËùÓĞÔò-length-1
-            //Èç¹ûÆäÓ¦¸ÃµÄ²åÈëÎ»ÖÃÔÚnums[i]Óënums[i+1]Ö®¼ä£¬Ôò·µ»Ø-i-2;
+            //è‡ªå¸¦çš„binarySearchï¼Œè‹¥targetå°äºnumsé‡Œæ‰€æœ‰å€¼åˆ™è¿”å›-1ï¼Œå¤§äºæ‰€æœ‰åˆ™-length-1
+            //å¦‚æœå…¶åº”è¯¥çš„æ’å…¥ä½ç½®åœ¨nums[i]ä¸nums[i+1]ä¹‹é—´ï¼Œåˆ™è¿”å›-i-2;
             ans = Arrays.binarySearch(nums, 0, nums.length, target);
             if(ans >= 0){
                 return ans;
@@ -25,7 +25,7 @@ public class T0033 {
         }
 
     }
-    //¶ş·Ö£¬midºÍ×îÓÒ¶Ë£¨²»ÒËÓÃr£©±È½ÏÀ´È·¶¨·­×ªÎ»ÖÃ£¬×îºór+1==lÇÒnums[r]>nums[l]£¬¼´Îª·Ö½ç¡£
+    //äºŒåˆ†ï¼Œmidå’Œæœ€å³ç«¯ï¼ˆä¸å®œç”¨rï¼‰æ¯”è¾ƒæ¥ç¡®å®šç¿»è½¬ä½ç½®ï¼Œæœ€år+1==lä¸”nums[r]>nums[l]ï¼Œå³ä¸ºåˆ†ç•Œã€‚
     public int find_index(int[] nums){
         int l = 0, r = nums.length-1,mid;
         while(l<=r){

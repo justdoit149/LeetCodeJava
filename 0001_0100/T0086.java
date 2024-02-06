@@ -13,8 +13,8 @@ import java.util.Queue;
  * }
  */
 
-//·½·¨Ò»£º°ÑÊýÖµ¼ÇÂ¼ÏÂÀ´£¬Ö»¸Ä±äÖµ¶ø²»¸Ä±äÁ´±í½á¹¹
-//·½·¨¶þ£º¿ªÁ½¸öÁ´±í£¬±éÀú¹ý³ÌÖÐ°ÑÐ¡µÄ·ÅÔÚµÚÒ»¸öÀï£¬´óµÄ·ÅÔÚµÚ¶þ¸öÀï£¬×îºóºÏ²¢ÆðÀ´¡£
+//æ–¹æ³•ä¸€ï¼šæŠŠæ•°å€¼è®°å½•ä¸‹æ¥ï¼Œåªæ”¹å˜å€¼è€Œä¸æ”¹å˜é“¾è¡¨ç»“æž„
+//æ–¹æ³•äºŒï¼šå¼€ä¸¤ä¸ªé“¾è¡¨ï¼ŒéåŽ†è¿‡ç¨‹ä¸­æŠŠå°çš„æ”¾åœ¨ç¬¬ä¸€ä¸ªé‡Œï¼Œå¤§çš„æ”¾åœ¨ç¬¬äºŒä¸ªé‡Œï¼Œæœ€åŽåˆå¹¶èµ·æ¥ã€‚
 
 public class T0086 {
     public ListNode partition(ListNode head, int x) {

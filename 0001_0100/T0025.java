@@ -1,10 +1,10 @@
 public class T0025 {
-    //µİ¹éµØ·­×ªÃ¿Ò»×é
+    //é€’å½’åœ°ç¿»è½¬æ¯ä¸€ç»„
     public ListNode reverseKGroup(ListNode head, int k) {
         if (head == null) return head;
         ListNode tail = head;
         for (int i = 0; i < k; i++) {
-            if (tail == null) return head;//Èç¹û²»×ãk¸öÔò²»ÓÃ·­×ª£¬Ö±½Ó·µ»Ø¡£
+            if (tail == null) return head;//å¦‚æœä¸è¶³kä¸ªåˆ™ä¸ç”¨ç¿»è½¬ï¼Œç›´æ¥è¿”å›ã€‚
             tail = tail.next;
         }
         ListNode newHead = reverse(head, tail);

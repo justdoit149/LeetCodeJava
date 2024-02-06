@@ -15,7 +15,7 @@ public class T0005 {
         if(b == e - 1 && s.charAt(b) != s.charAt(e)){
             return new String();
         }else{
-            return s.substring(b+1, e);//È¡Í·È¥Î²£¡£¡
+            return s.substring(b+1, e);
         }
     }
     public static void main(String[] args) {

@@ -1,5 +1,5 @@
 public class T0027 {
-    //Óë0026¼¸ºõÒ»Ñù
+    //ä¸Ž0026å‡ ä¹Žä¸€æ ·
     public int removeElement(int[] nums, int val) {
         int ans = 0;
         for(int i = 0; i < nums.length; i++){

@@ -1,7 +1,7 @@
 public class T0063 {
-    //×î»ù´¡µÄdp
-    //ÌâÖÐÕÏ°­ÎïÊÇ1£¬ÆäÊµËüÊÇ0¸üºÃ£¬ÕâÑù²»ÓÃÌÖÂÛ£¬Ö±½ÓÓÃÔ­Êý×é´æÂ·¾¶Êý¡£
-    //ÕâÑùÖ»ÐèÒª±éÀúÒ»±é£¬²¢ÇÒ¶îÍâ¿Õ¼äÊÇO(1)£¬¿ÉÒÔÊµÏÖÊ±¼äºÍ¿Õ¼äÏûºÄ¶¼½ÏÐ¡¡£
+    //æœ€åŸºç¡€çš„dp
+    //é¢˜ä¸­éšœç¢ç‰©æ˜¯1ï¼Œå…¶å®žå®ƒæ˜¯0æ›´å¥½ï¼Œè¿™æ ·ä¸ç”¨è®¨è®ºï¼Œç›´æŽ¥ç”¨åŽŸæ•°ç»„å­˜è·¯å¾„æ•°ã€‚
+    //è¿™æ ·åªéœ€è¦éåŽ†ä¸€éï¼Œå¹¶ä¸”é¢å¤–ç©ºé—´æ˜¯O(1)ï¼Œå¯ä»¥å®žçŽ°æ—¶é—´å’Œç©ºé—´æ¶ˆè€—éƒ½è¾ƒå°ã€‚
     public int uniquePathsWithObstacles(int[][] obstacleGrid) {
         int m = obstacleGrid.length, n = obstacleGrid[0].length;
         if(obstacleGrid[0][0] == 1){
@@ -12,7 +12,7 @@ public class T0063 {
             if(obstacleGrid[i][0] == 1){
                 obstacleGrid[i][0] = 0;
             }else{
-                //×¢ÒâÕâÀï²»ÊÇ1£¬ÒòÎª¿ÉÄÜËüÉÏÃæÓÐÕÏ°­Îï¡£
+                //æ³¨æ„è¿™é‡Œä¸æ˜¯1ï¼Œå› ä¸ºå¯èƒ½å®ƒä¸Šé¢æœ‰éšœç¢ç‰©ã€‚
                 obstacleGrid[i][0] = obstacleGrid[i-1][0];
             }
         }

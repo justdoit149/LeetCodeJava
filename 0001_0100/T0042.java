@@ -1,11 +1,11 @@
 public class T0042 {
-    // //����һ��ֱ�ӷ����������ҵ�һ����д�Ĵ��룩
-    // //�������ǵ�˼·��˼��ʲô���������װˮ���������뵽��Ӧ���������ȽϸߵĶ���֮��
-    // //���ǿ�����һ��l��rָ����װˮ�����䡣����˼�����Ƿ�������������˵�Ϊһ������ֵ
-    // //Ȼ��r = l+1Ȼ�󲻶�r++ֱ���ҵ�ĳ��height[r] >= height[l]������������������֮��װˮ
-    // //ˮ��ȡ���ڶ˵�϶̵ļ�ȥ��ǰλ�õģ�Ȼ����ӡ�֮����l = r������ֱ�������Ҷ�
-    // //��������Ҳ������ڵ��ڵ�ǰ�߶ȵģ��Ǿ�ȡ��ߵ�Ȼ���������֮���װˮ����Ȼ����������l��
-    // //���������Ƚ������뵽��������д������Է�����ϸ�ڽ϶࣬��Ҫ���۸��ֱ߽�����
+    // //方法一：直接法（以下是我第一遍做写的代码）
+    // //首先我们的思路是思考什么样的情况能装水，很容易想到它应该在两个比较高的东西之间
+    // //我们可以设一个l和r指向能装水的区间。经过思考我们发现这个区间的左端点为一个极大值
+    // //然后r = l+1然后不断r++直到找到某个height[r] >= height[l]，这样就在它们两个之间装水
+    // //水量取决于端点较短的减去当前位置的，然后相加。之后让l = r继续，直到到最右端
+    // //如果向右找不到大于等于当前高度的，那就取最高的然后计算他们之间的装水量，然后用它更新l。
+    // //这种做法比较容易想到，但代码写起来相对繁琐且细节较多，需要讨论各种边界条件
     // public int trap(int[] height) {
     //     int ans = 0;
     //     int l = 0, r = 0, R = height.length-1, max_temp = 0, max_temp_index = 0;
@@ -44,12 +44,12 @@ public class T0042 {
     //     return ans;
     // }
 
-    //����������̬�滮�������Ƽ��������������ύ�꿴���Լ�ʱ��̫�����Լ�˼�����뵽��������
-    //��ֻ����ĳһ��λ��index��װˮ����ȡ������������ֵheight[i]���������ֵheight[j]
-    //Ȼ��װˮ������min(height[i],height[j]) - height[index]����Ȼ�����С��0�Ǿ���0��
-    //��������ֵ��ô����?����Ȼ��λ��i��������ֵleftMax[i] = max(leftMax[i-1],height[i-1])
-    //�ұ߾���rightMax[i] = max(rightMax[i+1],height[i+1])��
-    //�������ǾͿ��Զ�̬�滮�ˣ�ֻ��Ҫ��ǰ����ʹӺ���ǰ���Էֱ�������������飬Ȼ����;�������
+    //方法二：动态规划做法（推荐）（以下是我提交完看到自己时间太慢，稍加思考后想到的做法）
+    //先只考虑某一个位置index的装水量，取决于它左边最高值height[i]和右面最高值height[j]
+    //然后装水量就是min(height[i],height[j]) - height[index]，当然如果它小于0那就是0。
+    //那这个最高值怎么找呢?很显然，位置i的左边最高值leftMax[i] = max(leftMax[i-1],height[i-1])
+    //右边就是rightMax[i] = max(rightMax[i+1],height[i+1])。
+    //这样我们就可以动态规划了，只需要从前往后和从后往前各自分别遍历这两个数组，然后求和就行啦。
     public int trap(int[] height){
         int[] leftMax = new int[height.length];
         int[] rightMax = new int[height.length];

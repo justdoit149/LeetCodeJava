@@ -1,5 +1,4 @@
 public class T0064 {
-    //×î»ù´¡µÄdp
     public int minPathSum(int[][] grid) {
         int m = grid.length, n = grid[0].length;
         for(int i = 1; i < m; i++){
