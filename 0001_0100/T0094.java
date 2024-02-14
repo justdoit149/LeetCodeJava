@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
+// import java.util.Stack;
 
 //二叉树中序遍历，三种方法，都要掌握！！
 //前两种方法都是只访问一遍，时间O(n)；空间要维护栈，最好O(logn)最差O(n)
@@ -23,9 +24,9 @@ public class T0094 {
     // }
 
     // // 方法二：迭代方法。显式地维护数据栈。
+    // // 迭代思路：遍历某个树时，把它压栈然后遍历其左子树，遍历完后出栈并查看根，然后遍历右子树。
     // public List<Integer> inorderTraversal(TreeNode root) {
     //     List<Integer> ans = new ArrayList<>();
-    // // 迭代思路：遍历某个树时，把它压栈然后遍历其左子树，遍历完后出栈并查看根，然后遍历右子树。
     //     Stack<TreeNode> stack = new Stack<>();
     //     TreeNode pointer = root;
     //     while(true){
@@ -58,8 +59,7 @@ public class T0094 {
                 while(pre.right != null && pre.right != pointer){
                     pre = pre.right;
                 }
-                //如果左子树的最右节点是空，则访问左子树。
-                if(pre.right == null){
+                if(pre.right == null){//如果左子树的最右节点是空，则访问左子树。
                     pre.right = pointer;
                     pointer = pointer.left;
                 }else{//非空，说明左子树被访问了，则恢复，并访问右子树。
